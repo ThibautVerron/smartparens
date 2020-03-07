@@ -113,7 +113,7 @@ ID, ACTION, CONTEXT."
   ;; need to insert ", C-q is our friend.
   (sp-local-pair "``" "''"
                  :trigger "\""
-                 :unless '(sp-latex-point-after-backslash sp-in-math-p)
+                 :unless '(sp-latex-point-after-backslash sp-in-math-p sp-in-comment-p)
                  :post-handlers '(sp-latex-skip-double-quote))
 
   ;; add the prefix function sticking to {} pair
