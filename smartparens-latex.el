@@ -128,19 +128,15 @@ ID, ACTION, CONTEXT."
   ;; useful to add here.  Post suggestions if you know some.
   (sp-local-pair "\\left(" "\\right)"
                  :trigger "\\l("
-                 :when '(sp-in-math-p)
                  :post-handlers '(sp-latex-insert-spaces-inside-pair))
   (sp-local-pair "\\left[" "\\right]"
                  :trigger "\\l["
-                 :when '(sp-in-math-p)
                  :post-handlers '(sp-latex-insert-spaces-inside-pair))
   (sp-local-pair "\\left\\{" "\\right\\}"
                  :trigger "\\l{"
-                 :when '(sp-in-math-p)
                  :post-handlers '(sp-latex-insert-spaces-inside-pair))
   (sp-local-pair "\\left|" "\\right|"
                  :trigger "\\l|"
-                 :when '(sp-in-math-p)
                  :post-handlers '(sp-latex-insert-spaces-inside-pair))
   (sp-local-pair "\\bigl(" "\\bigr)"
                  :post-handlers '(sp-latex-insert-spaces-inside-pair))
@@ -173,11 +169,9 @@ ID, ACTION, CONTEXT."
   (sp-local-pair "\\langle" "\\rangle"
                  :post-handlers '(sp-latex-insert-spaces-inside-pair))
   (sp-local-pair  "\\lVert" "\\rVert"
-          :when '(sp-in-math-p)
           :trigger "\\lVert"
           :post-handlers '(sp-latex-insert-spaces-inside-pair))
   (sp-local-pair  "\\lvert" "\\rvert"
-          :when '(sp-in-math-p)
           :trigger "\\lvert"
           :post-handlers '(sp-latex-insert-spaces-inside-pair))
 
